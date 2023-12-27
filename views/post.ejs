@@ -1,0 +1,7 @@
+<%- include("partials/header") -%>
+    <h1> <%= currpostTitle %>   </h1>
+    <p>  <%= currpostContent %> </p>
+    <form action="/posts/<%= currId %>" method="post" style="display:inline;">
+        <button class="btn btn-light">GO BACK</button>
+    </form>
+<%- include("partials/footer") -%>

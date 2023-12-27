@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #dbb8ff;
+    font-family: Times New Roman;
+}
+
+p{
+    font-family:Georgia;
+}
+
+.container-fluid 
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.navbar 
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  
+}
+
+.navbar-nav  li a:hover 
+{
+    color: #fcacec !important;
+}
+
+.footer-padding 
+{
+    padding-bottom: 60px;
+}
+
+.footer 
+{
+    text-align: center;
+    height: 60px;
+    background-color: #ffffff;
+    margin-top: auto;
+}
+
+.footer p 
+{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #676669;
+}
+
+.contact-info
+{
+    background-color: rgb(93, 85, 105);
+    display: flex;
+    flex-direction: row;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    padding :40px; 
+    margin-top: 50px;
+}
+
+.contact-field
+{
+    margin:auto;
+    font-family: 'Trebuchet MS', sans-serif;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card
+{
+    max-width: 540px; 
+    background-color:  rgb(93, 85, 105);
+    padding :10px; 
+    border-radius: 18px;
+    margin:auto; 
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-title
+{
+    color: rgb(253, 207, 245);
+    font-size: larger;
+}
+
+.card-text
+{
+    color: rgb(255, 255, 255); 
+    font-size: medium;
+}

@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+
+    <h1 style="font-family: Georgia,Cochin, Cambria,  Times, 'Times New Roman', serif;">Welcome </h1>
+    <p> <%= startingContent %> </p>
+    <form action = "/" method = "post">
+        <button class="btn btn-light">NEW POST</button>
+    </form>
+
+    <% if (posts.length > 0) { %>
+        <!-- Render posts if there are any -->
+        <% posts.forEach(function(post){ %>
+          <h2><%= post.title %></h2>
+          <p>
+            <%= post.content.substring(1,100) + "..." %>
+            <a href="/posts/<%= post._id %>">Read More</a>
+          </p>
+          <form action="/delete/<%= post._id %>" method="post" style="display:inline;">
+            <button class="btn btn-danger">DELETE</button>
+          </form>
+        <% }) %>
+      <% } %>
+
+<%- include("partials/footer"); -%>
