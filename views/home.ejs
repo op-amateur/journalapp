@@ -17,7 +17,10 @@
           <form action="/delete/<%= post._id %>" method="post" style="display:inline;">
             <button class="btn btn-danger">DELETE</button>
           </form>
+          <form action="/edit/<%= post._id %>" method="get" style="display:inline;">
+            <button class="btn btn-light">EDIT</button>
+          </form>
         <% }) %>
-      <% } %>
+    <% } %>
 
 <%- include("partials/footer"); -%>

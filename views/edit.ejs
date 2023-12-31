@@ -1,16 +1,16 @@
 <%- include("partials/header") -%>
-    <h1>COMPOSE NEW POST</h1>
-    <form class="" action="/compose" method="post">
+    <h1>Edit Post</h1>
+    <form action="/edit/<%= editId %>" method="post">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Title</label>
-            <input type="text" class="form-control" name="postTitle">
+            <input type="text" class="form-control" name="postEditTitle" value="<%= editTitle %>">
         </div>
         <br>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Content</label>
-            <textarea class="form-control" rows="5" name="postContent"></textarea>
+            <textarea class="form-control" rows="5" name="postEditContent"><%= editContent %></textarea>
         </div>
         <br>
-        <button type="submit" class="btn btn-primary" name="button">PUBLISH</button>
+        <button class="btn btn-primary" name="button">SAVE</button>
     </form>
 <%- include("partials/footer") -%>
